@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Badge Test</title>
+</head>
+
+<body>
+    <div id="app1-9n9zxm79mqr7" class="app2-9n9zxm79mqr7"></div>
+    <div id="app2-c44nvltsd4mg" class="app2-c44nvltsd4mg"></div>
+    <script src="https://storebadge.azureedge.net/src/badge-1.6.1.js"></script>
+    <!-- Available sizes: normal, media, large -->
+    <!-- last overwrites all -->
+    <script>
+        mspb({ productId: '9n9zxm79mqr7', badgeType: 'large' }, function (badge1) {
+            document.getElementById('app1-9n9zxm79mqr7').innerHTML = badge1;
+        });
+    </script>
+    <script>
+        mspb({ productId: 'c44nvltsd4mg', badgeType: 'normal' }, function (badge2) {
+            document.getElementById('app2-c44nvltsd4mg').innerHTML = badge2;
+        });
+    </script>
+
+    <!--
+        <script>
+            mspb({ productId: 'c44nvltsd4mg', badgeType: 'large' },
+                function (badge) {
+                    badge = badge.replace(/www\.microsoft\.com\/store\//g, "www.microsoft.com/en-us/store/");
+                    document.getElementById("mspb-5b0bc718bcfca").innerHTML = badge;
+                });
+        </script>
+    -->
+
+</body>
+
+</html>

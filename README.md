@@ -32,7 +32,18 @@ BODY
 - `locale`
 - `deviceFamily`
 
+## Body Parameters
+- `productIds`
+- `parentProductId` (optional)
+
+```
+{productIds: "9n9zxm79mqr7", parentProductId: ""}
+```
+
+
 
 # References
 - https://docs.microsoft.com/de-de/windows/privacy/manage-windows-endpoints#microsoft-store
 - https://blogs.windows.com/buildingapps/2018/05/18/a-new-product-badge-for-microsoft-store-applications/#wxXtV2V8lebI1R4W.97
+- http://displaycatalog.mp.microsoft.com/
+- pti.store.microsoft.com
