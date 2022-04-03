@@ -26,13 +26,13 @@ BODY
 {productIds: "bwv5n56m5bvh,c1k748m3xp5d"}
 ``` 
 
-## URL Parameters
+### URL Parameters
 
 - `market`
 - `locale`
 - `deviceFamily`
 
-## Body Parameters
+### Body Parameters
 - `productIds`
 - `parentProductId` (optional)
 
@@ -40,7 +40,44 @@ BODY
 {productIds: "9n9zxm79mqr7", parentProductId: ""}
 ```
 
+## Search for a product
 
+`GET`
+`https://storeedgefd.dsx.mp.microsoft.com/v9.0/pages/searchResults?appVersion=22203.1401.0.0&market=US&locale=en-US&deviceFamily=windows.desktop&query=calculator`
+
+### URL Parameters
+
+- `market` - Region in the form of a country code
+- `locale` - Language for response
+- `deviceFamily` - What device to base response on
+- `query` - What to search for
+
+### Response format
+
+```json
+[
+  {}, // Metadata
+  {
+    "$type": "Microsoft.Marketplace.Storefront.Contracts.V1.ResponseItem, Microsoft.Marketplace.Storefront.Contracts",
+    
+    "Payload": {
+      "$type": "Microsoft.Marketplace.Storefront.Contracts.V9.SearchResponse, Microsoft.Marketplace.Storefront.Contracts",
+      
+      "SearchResults": [
+        {
+          "$type": "Microsoft.Marketplace.Storefront.Contracts.V8.One.CardModel, Microsoft.Marketplace.Storefront.Contracts",
+          
+          "ProductId": <string:PRODUCT ID>,
+          "Title": <string:PRODUCT NAME/TITLE>,
+          "Images": [...],
+          "PackageFamilyNames": [<string:PACKAGE FAMILY NAME>],
+          "Price": <float:PRICE>
+        }
+      ]
+    }
+  }
+]
+```
 
 # References
 - https://docs.microsoft.com/de-de/windows/privacy/manage-windows-endpoints#microsoft-store
