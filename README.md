@@ -54,7 +54,7 @@ BODY
 
 ### Response format
 
-```json
+```jsonc
 [
   {}, // Metadata
   {
@@ -67,11 +67,11 @@ BODY
         {
           "$type": "Microsoft.Marketplace.Storefront.Contracts.V8.One.CardModel, Microsoft.Marketplace.Storefront.Contracts",
           
-          "ProductId": <string:PRODUCT ID>,
-          "Title": <string:PRODUCT NAME/TITLE>,
-          "Images": [...],
-          "PackageFamilyNames": [<string:PACKAGE FAMILY NAME>],
-          "Price": <float:PRICE>
+          "ProductId": "<PRODUCT ID>",
+          "Title": "<PRODUCT NAME/TITLE>",
+          "Images": [ /*...*/ ],
+          "PackageFamilyNames": ["<PACKAGE FAMILY NAME>"],
+          "Price": /*<PRICE>*/
         }
       ]
     }
