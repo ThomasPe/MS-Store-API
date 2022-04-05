@@ -1,4 +1,4 @@
-# /search endpoint
+# /pages endpoint
 
 ## Search for a product
 
@@ -10,14 +10,14 @@
 `GET`
 `https://storeedgefd.dsx.mp.microsoft.com/v9.0/pages/searchResults?appVersion=22203.1401.0.0&market=US&locale=en-US&deviceFamily=windows.desktop&query=calculator`
 
-### URL Parameters
+## URL Parameters
 
 - `market` - Region in the form of a country code
 - `locale` - Language for response
 - `deviceFamily` - What device to base response on
 - `query` - What to search for
 
-### Response format
+## Response format
 
 ```jsonc
 [
