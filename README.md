@@ -6,7 +6,7 @@ With the release of the product [badge tool for the Microsoft Store](https://blo
 
 ## Get product information
 
-* [v8.0/sdk](endpoints/v8.0/products.md)
+* [v8.0/sdk/products](endpoints/v8.0/products.md)
 
 ## Search for a product (store search w/ images)
 
@@ -14,7 +14,7 @@ With the release of the product [badge tool for the Microsoft Store](https://blo
 
 ## Search for a product (manifest search/winget)
 
-* [v9.0/manifestSearch.md](endpoints/v9.0/manifestSearch.md)
+* [v9.0/manifestSearch](endpoints/v9.0/manifestSearch.md)
 
 # References
 - https://docs.microsoft.com/de-de/windows/privacy/manage-windows-endpoints#microsoft-store
