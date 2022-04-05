@@ -12,6 +12,10 @@ With the release of the product [badge tool for the Microsoft Store](https://blo
 
 * [v9.0/pages](endpoints/v9.0/pages.md)
 
+## Search for a product (manifest search/winget)
+
+* [v9.0/manifestSearch.md](endpoints/v9.0/manifestSearch.md)
+
 # References
 - https://docs.microsoft.com/de-de/windows/privacy/manage-windows-endpoints#microsoft-store
 - https://blogs.windows.com/buildingapps/2018/05/18/a-new-product-badge-for-microsoft-store-applications/#wxXtV2V8lebI1R4W.97
