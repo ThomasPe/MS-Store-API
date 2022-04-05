@@ -4,8 +4,9 @@
 `https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products`
 
 ## Get a single product
+
 `POST`
-`https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products?market=DE&locale=de-DE&deviceFamily=Windows.Desktop`
+`https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products?market=US&locale=en-US&deviceFamily=Windows.Desktop`
 
 ```
 BODY
@@ -15,7 +16,7 @@ BODY
 ## Get multiple products
 
 `POST`
-`https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products?market=DE&locale=de-DE&deviceFamily=Windows.Desktop`
+`https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products?market=US&locale=en-US&deviceFamily=Windows.Desktop`
 
 ```
 BODY
