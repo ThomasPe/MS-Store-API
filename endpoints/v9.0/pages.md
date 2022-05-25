@@ -16,6 +16,7 @@
 - `locale` - Language for response
 - `deviceFamily` - What device to base response on
 - `query` - What to search for
+- `mediaType` (optional) - `all` (default), `apps`, `games`, `movies`, or `tv`
 
 ## Response format
 
